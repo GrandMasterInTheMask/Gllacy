@@ -1,4 +1,4 @@
-h1, h2, h3, * {
+h1, h2, h3, p, * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -205,15 +205,40 @@ h1 {
 .examples li {
   position: relative;
   width: 23.354%;
-  background-color: gray;
+  margin-bottom: 38px;
 }
 .examples img:not(.hit) {
   width: 100%;
   height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.examples p {
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+.examples .description {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 .hit {
   position: absolute;
   top:0;
+}
+.price {
+  position: absolute;
+  left: 0;
+  top: -55px;
+  font-weight: bold;
+  font-size: 28px;
+}
+.price .rouble {
+  font-size: 42px;
+}
+.price .to-move {
+  margin-left: -6px;
 }
 
 
@@ -223,5 +248,5 @@ h1 {
   left: 0px;
   top: 0px;
   width: 1000px;
-  height: 807px;
+  height: 1238px;
 }*/
