@@ -8,6 +8,11 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
+.btn {
+  display: block;
+  background-color: #ec583c;
+  font-weight: bold;
+}
 body {
   background-color: #849d8f;
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -108,24 +113,96 @@ header {
 .time-phone span:last-of-type {
   font-size: 22px;
 }
+.slider {
+  position: relative;
+}
 h1 {
   font-weight: 900;
   font-size: 60px;
   line-height: 60.35px;
   text-align: center;
   padding-top: 317px;
+  margin-bottom: 33px;
+}
+.position ul {
+  position:absolute;
+  top: 490px;
 }
 .position li {
   width: 21px;
   height: 21px;
   border: 2px solid #ffffff;
   border-radius: 50%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
 }
+.position .active {
+  background-color: #ffffff;
+}
+.slider .btn {
+  font-size: 31.48px;
+  line-height: 62.93px;
+  width: 278px;
+  height: 63px;
+  border-radius: 30px;
+  padding-left: 39px;
+  margin: 0 auto;
+  margin-bottom: 41px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.half-1 {
+  position: relative;
+  flex-basis: 48.9%;
+  min-height: 230px;
+  background-color: gray;
+  border-radius: 13px;
+  padding-top: 18px;
+}
+.half-1 h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.half-1 p {
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+.half-1 p:last-of-type {
+  margin-bottom: 75px;
+}
+.half-1 .btn {
+  position: absolute;
+  font-size: 18px;
+  border-radius: 22px;
+  right: 21px;
+  bottom: 23px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 13px;
+  height: 46px;
+}
+.half-left-1 {
+  background-image: url("../img/raspberry.png");
+  background-size: cover;
+}
+.half-right-1 {
+  background-image: url("../img/chocolate.png");
+  background-size: cover;
+}
+
 /*.tester {
   position: absolute;
   background-color: rgba(255, 255, 0, 0.5);
-  left: 450px;
+  left: 0px;
   top: 0px;
   width: 1000px;
-  height: 512px;
+  height: 807px;
 }*/
