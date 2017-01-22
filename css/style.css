@@ -4,6 +4,10 @@
   padding: 0;
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
 body {
   background-color: #849d8f;
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -14,14 +18,18 @@ body {
 .container {
   margin: 0 2.25%;
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 header {
-  background-color: gray;
+  /*background-color: gray;*/
 }
 .main-menu {
   position: relative;
   padding-left: 178px;
   min-height: 73px;
-  background-color: blue;
   float: left;
   min-width: 560px;
 }
@@ -29,7 +37,6 @@ header {
   position: absolute;
   top: 10px;
   left: -21px;
-
 }
 .main-menu li {
   display: inline-block;
@@ -38,7 +45,39 @@ header {
   padding-right: 24px;
 }
 .main-menu li a {
-  text-decoration: none;
-  color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.header-info {
+  float: right;
+}
+.header-info li {
+  display: inline-block;
+  vertical-align: top;
+  height: 32px;
+  margin-left: 10px;
+  margin-top: 23px;
+}
+.header-info li a {
+  display: block;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  font-size: 14px;
+
+}
+.header-info li:nth-of-type(1) a {
+  width: 33px;
+  background: rgba(255, 255, 255, 0.2) url("../img/magnifier.svg") no-repeat center center;
+}
+.header-info li:nth-of-type(2) a {
+  width: 92px;
+  padding-left: 44px;
+  padding-top: 9px;
+  background: rgba(255, 255, 255, 0.2) url("../img/enter.svg") no-repeat 16px center;
+}
+.header-info li:nth-of-type(3) a {
+  width: 117px;
+  padding-left: 45px;
+  padding-top: 9px;
+  background: rgba(255, 255, 255, 0.2) url("../img/enter.svg") no-repeat 16px center;
 }
