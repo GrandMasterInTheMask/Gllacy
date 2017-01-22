@@ -1,4 +1,4 @@
-* {
+h1, h2, h3, * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,7 +15,14 @@ body {
   font-size: 16px;
   color: #ffffff;
 }
-.container {
+.container-global {
+  background-image: url("../img/light.png");
+  background-position: center 0;
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container-local {
   margin: 0 2.25%;
 }
 .clearfix::after {
@@ -24,7 +31,9 @@ body {
   clear: both;
 }
 header {
-  /*background-color: gray;*/
+  background-image: url("../img/ice-cream.png");
+  background-repeat: no-repeat;
+  background-position: 47% 84px;
 }
 .main-menu {
   position: relative;
@@ -46,6 +55,7 @@ header {
 }
 .main-menu li a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  font-weight: 500;
 }
 .header-info {
   float: right;
@@ -81,3 +91,34 @@ header {
   padding-top: 9px;
   background: rgba(255, 255, 255, 0.2) url("../img/enter.svg") no-repeat 16px center;
 }
+.slider {
+  position: relative;
+  /*background-color: gray;*/
+}
+.time-phone {
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+.time-phone span:first-of-type {
+  font-size: 14px;
+  font-weiht: bold;
+}
+.time-phone span:last-of-type {
+  font-size: 22px;
+}
+h1 {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 60.35px;
+  text-align: center;
+  padding-top: 317px;
+}
+/*.tester {
+  position: absolute;
+  background-color: rgba(255, 255, 0, 0.5);
+  left: 450px;
+  top: 0px;
+  width: 1000px;
+  height: 512px;
+}*/
