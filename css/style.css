@@ -315,12 +315,37 @@ h1 {
 }
 .column-4 {
   background: url("../img/inside.png") no-repeat 5px 5px, url("../img/border.png");
+  padding-left: 28px;
+  padding-top: 37px;
+  padding-right: 26px;
 }
 .column-4 p {
   color: #5a5a5a;
   font-size: 16px;
   color: 22px;
+  margin-bottom: 45px;
 }
+.column-4 form {
+  display: flex;
+}
+.column-4 input {
+  flex-grow: 1;
+  height: 45px;
+  border-radius: 4px;
+  border: 1px solid #d3d3d2;
+  padding: 10px;
+}
+.column-4 button {
+  width: 130px;
+  height: 45px;
+  border-radius: 22px;
+  border: none;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-left: 11px;
+}
+
 
 
 /*.tester {
@@ -329,5 +354,5 @@ h1 {
   left: 0px;
   top: 0px;
   width: 1000px;
-  height: 1759px;
+  height: 1760px;
 }*/
