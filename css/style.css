@@ -394,6 +394,10 @@ aside .btn {
   text-align: center;
   padding-top: 10px;
 }
+footer {
+  min-height: 103px;
+  background-color: black;
+}
 
 
 
