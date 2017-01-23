@@ -379,7 +379,14 @@ aside strong {
   color: #343434;
   max-width: 225px;
 }
+aside .street {
+  margin-bottom: 18px;
+}
+aside .call {
+  margin-bottom: 6px;
+}
 aside .btn {
+  margin-top: 25px;
   height: 45px;
   font-size: 17px;
   line-height: 24.3px;
@@ -395,6 +402,6 @@ aside .btn {
   background-color: rgba(255, 255, 0, 0.5);
   left: 0px;
   top: 0px;
-  width: 1000px;
-  height: 1760px;
+  width: 1200px;
+  height: 2254px;
 }*/
