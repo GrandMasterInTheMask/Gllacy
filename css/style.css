@@ -345,6 +345,48 @@ h1 {
   color: #ffffff;
   margin-left: 11px;
 }
+.map {
+  position: relative;
+  min-height: 430px;
+  background-color: gray;
+}
+aside {
+  position: absolute;
+  top: 65px;
+  right: 27px;
+  width: 305px;
+  min-height: 305px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url("../img/adress.png");
+  border-radius: 15px;
+
+}
+aside b {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #343434;
+  font-weight: normal;
+  max-width: 175px;
+}
+aside strong {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  color: #343434;
+  max-width: 225px;
+}
+aside .btn {
+  height: 45px;
+  font-size: 17px;
+  line-height: 24.3px;
+  border-radius: 22px;
+  text-align: center;
+  padding-top: 10px;
+}
 
 
 
