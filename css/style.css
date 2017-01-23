@@ -399,10 +399,9 @@ footer {
   justify-content: space-between;
   min-height: 103px;
   background-color: #849d8f;
-  /*background-color: black;*/
 }
 footer .social-contacts {
-  padding-top: 36px;
+  padding-top: 35px;
   padding-bottom: 29px;
   padding-left: 28px;
 }
@@ -428,19 +427,45 @@ footer .vk {
   background: url("../img/vk.svg") no-repeat 50% 50%;
 }
 
+footer .footer-info {
+  padding-top: 25px;
+  font-weight: normal;
+  font-size: 13px;
+}
+.footer-info ul {
+  width: 330px;
+  display: table;
+}
+.footer-info .row {
+  display: table-row;
+}
+.footer-info li {
+  padding-left: 22px;
+  display: table-cell;
+  padding-top: 10px;
+}
+.footer-info li:nth-of-type(2n) {
+  padding-left: 32px;
+}
+.footer-info a {
+  border-bottom: 1px solid #abbcb3;
+}
+.footer-info .heart {
+  background: url("../img/heart.svg") no-repeat 0 10px;
+  font-weight: bold;
+}
+
 footer .made {
   background: url("../img/footer-logo.svg") no-repeat 0 20px;
   padding-right: 27px;
   font-size: 12px;
   font-weight: normal;
   color: #fefefe;
-  padding-top: 62px;
+  padding-top: 63px;
 }
 .made a {
   border-bottom: 1px solid #b5c4bc;
 }
-
-
 
 
 /*.tester {
@@ -449,5 +474,5 @@ footer .made {
   left: 0px;
   top: 0px;
   width: 1200px;
-  height: 2254px;
+  height: 2391px;
 }*/
