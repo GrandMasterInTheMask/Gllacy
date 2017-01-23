@@ -395,9 +395,51 @@ aside .btn {
   padding-top: 10px;
 }
 footer {
+  display: flex;
+  justify-content: space-between;
   min-height: 103px;
-  background-color: black;
+  background-color: #849d8f;
+  /*background-color: black;*/
 }
+footer .social-contacts {
+  padding-top: 36px;
+  padding-bottom: 29px;
+  padding-left: 28px;
+}
+footer .icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 4px solid #c2cec7;
+  margin-right: 11px;
+}
+footer .tw {
+  background: url("../img/tw.svg") no-repeat 50% 50%;
+}
+footer .ins {
+  background: url("../img/ins.svg") no-repeat 50% 50%;
+}
+footer .fb {
+  background: url("../img/fb.svg") no-repeat 50% 50%;
+}
+footer .vk {
+  background: url("../img/vk.svg") no-repeat 50% 50%;
+}
+
+footer .made {
+  background: url("../img/footer-logo.svg") no-repeat 0 20px;
+  padding-right: 27px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #fefefe;
+  padding-top: 62px;
+}
+.made a {
+  border-bottom: 1px solid #b5c4bc;
+}
+
 
 
 
