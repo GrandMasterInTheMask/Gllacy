@@ -15,11 +15,11 @@ a {
   display: block;
   background-color: #ec583c;
   font-weight: bold;
+  cursor: pointer;
 }
 body {
   background-color: #849d8f;
   font-family: 'Roboto', 'Arial', sans-serif;
-  font-weight: bold;
   font-size: 16px;
   color: #ffffff;
 }
@@ -345,10 +345,21 @@ h1 {
   color: #ffffff;
   margin-left: 11px;
 }
-.map {
+.map-block {
   position: relative;
   min-height: 430px;
-  background-color: gray;
+}
+.map-block .map {
+  overflow: hidden;
+  cursor: pointer;
+}
+.map-block .location {
+  display: block;
+}
+.map-block .pointer {
+  position: absolute;
+  top: 137px;
+  left: 267px;
 }
 aside {
   position: absolute;
@@ -429,7 +440,6 @@ footer .vk {
 
 footer .footer-info {
   padding-top: 25px;
-  font-weight: normal;
   font-size: 13px;
 }
 .footer-info ul {
@@ -447,11 +457,14 @@ footer .footer-info {
 .footer-info li:nth-of-type(2n) {
   padding-left: 32px;
 }
-.footer-info a {
+.footer-info .row a {
+  font-weight: normal;
   border-bottom: 1px solid #abbcb3;
 }
 .footer-info .heart {
   background: url("../img/heart.svg") no-repeat 0 10px;
+}
+.footer-info .row .heart a {
   font-weight: bold;
 }
 
