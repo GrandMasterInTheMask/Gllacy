@@ -200,10 +200,12 @@ h1 {
 }
 .column-1 {
   background-image: url("../img/raspberry.png");
+  background-position: center 0;
   background-size: cover;
 }
 .column-2 {
   background-image: url("../img/chocolate.png");
+  background-position: center 0;
   background-size: cover;
 }
 .examples ul {
@@ -348,20 +350,11 @@ h1 {
 .map-block {
   position: relative;
   min-height: 430px;
-}
-.map-block .map {
-  overflow: hidden;
+  background: url("../img/map-rdy.png") no-repeat center 0;
   cursor: pointer;
 }
-.map-block .location {
-  display: block;
-}
-.map-block .pointer {
-  position: absolute;
-  top: 137px;
-  left: 267px;
-}
 aside {
+  cursor: auto;
   position: absolute;
   top: 65px;
   right: 27px;
