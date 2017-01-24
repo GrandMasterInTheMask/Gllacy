@@ -3,8 +3,6 @@ h1, h2, h3, p, * {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none;
-  font-weight: normal;
 }
 a {
   text-decoration: none;
@@ -37,6 +35,9 @@ body {
   display: table;
   clear: both;
 }
+
+/*HEADER START*/
+
 header {
   background-image: url("../img/ice-cream.png");
   background-repeat: no-repeat;
@@ -48,23 +49,75 @@ header {
   min-height: 73px;
   float: left;
   min-width: 560px;
-  max-width: 600px;
+  max-width: 640px;
 }
 .main-logo {
   position: absolute;
   top: 10px;
   left: -21px;
 }
-.main-menu li {
+.first-list > li {
   display: inline-block;
   vertical-align: top;
   padding-top: 30px;
-  padding-right: 24px;
+  margin-right: -4px;
 }
-.main-menu li a {
+.main-menu .main {
+  position: relative;
+  display: block;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 6.5px;
+  height: 32px;
+  border-radius: 15px;
+}
+.main-menu .text {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   font-weight: bold;
 }
+.main-menu .main:hover {
+  color: #333333;
+  background-color: #f7f6f3;
+}
+.main-menu .main:hover .text {
+  border: none;
+}
+.hidden-menu {
+  padding-top: 5px;
+  position: absolute;
+  left: 171px;
+  color: #343434;
+  /*display: none;*/
+}
+.hidden-menu ul {
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
+.hidden-menu a {
+  display: block;
+  color: #343434;
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+}
+.hidden-menu .new {
+  font-weight: bold;
+}
+.hidden-menu .border {
+  height: 1px;
+  background-color: #d1d0ce;
+  margin-left: 6px;
+  margin-right: 9px;
+}
+.hidden-menu a:hover {
+  background-color: #fbded7;
+}
+
+
 .header-info {
   float: right;
 }
@@ -482,6 +535,6 @@ footer .made {
   background-color: rgba(255, 255, 0, 0.5);
   left: 0px;
   top: 0px;
-  width: 1200px;
+  width: 205px;
   height: 2391px;
 }*/
