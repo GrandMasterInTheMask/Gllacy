@@ -1,4 +1,4 @@
-h1, h2, h3, p, * {
+h1, h2, h3, p, form, * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -47,11 +47,11 @@ body {
 
 /*HEADER START*/
 
-header {
+.top {
   background: url("../img/ice-cream.png") no-repeat 50% 84px;
   position: relative;
 }
-.top {
+header {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -94,7 +94,7 @@ header {
 }
 .main-link:active {
   color: #333333;
-  box-shadow: inset 0 2px 1px 0 #686868;
+  box-shadow: inset 0 1px 1px 0.5px #686868;
 }
 .main-link:hover .text {
   border: none;
@@ -104,7 +104,7 @@ header {
   position: absolute;
   z-index: 10;
   padding-top: 5px;
-  left: 13px;
+  left: 3px;
   color: #343434;
   display: none;
 }
@@ -117,7 +117,7 @@ header {
 .hidden-menu ul {
   background-color: #f8f7f4;
   border-radius: 5px;
-  box-shadow: 0px 8px 10px -1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
 }
 .hidden-menu a {
   display: block;
@@ -161,7 +161,7 @@ header {
   height: 32px;
   margin-left: 6px;
 }
-.header-info li a {
+.header-info .minor {
   display: block;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
@@ -169,11 +169,11 @@ header {
   font-size: 14px;
   font-weight: 500;
 }
-.search a {
+.search .minor {
   width: 33px;
   background: rgba(255, 255, 255, 0.2) url("../img/magnifier.svg") no-repeat center center;
 }
-.gasket {
+.search .gasket {
   position: absolute;
   left: -230px;
   padding-top: 5px;
@@ -184,7 +184,7 @@ header {
   padding: 15px;
   background-color: #f8f7f4;
   border-radius: 5px;
-  box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
 
 }
 .search input {
@@ -198,34 +198,91 @@ header {
   width: 242px;
   height: 35px;
 }
-.search a:hover {
+.search .minor:hover {
   background: #f8f7f4 url("../img/magnifier-black.svg") no-repeat center center;
 }
 .search:hover .gasket {
   display: block;
 }
-.gasket:hover {
-  display: block;
-}
-.enter a {
+.enter .minor {
   width: 92px;
   padding-left: 44px;
   padding-top: 9px;
   background: rgba(255, 255, 255, 0.2) url("../img/enter.svg") no-repeat 16px center;
 }
-.enter a:hover {
+.enter .gasket {
+  position: absolute;
+  right: 127px;
+  padding-top: 5px;
+  z-index: 10;
+  display: none;
+}
+.enter .block {
+  background-color: #f8f7f4;
+  padding: 20px 15px;
+  border-radius: 5px;
+  width: 272px;
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
+}
+.enter input {
+  font-size: 14px;
+  line-height: 24.3px;
+  color: #999999;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.enter button {
+  float: left;
+  font-size: 15px;
+  line-height: 24.3px;
+  color: #fefefe;
+  font-weight: bold;
+  padding-left: 31px;
+  padding-right: 28px;
+  height: 36px;
+  border: none;
+  border-radius: 16px;
+  margin-top: 5px;
+}
+.enter .block a {
+  font-size: 13px;
+  line-height: 24.3px;
+  color: #686766;
+  text-decoration: underline;
+  margin-left: 15px;
+}
+.enter .block a:hover {
+  color: #c3c3c1;
+}
+
+.enter .minor:hover {
   color: #373737;
   background: #f8f7f4 url("../img/enter-black.svg") no-repeat 16px center;
 }
-.basket a {
+.enter:hover .gasket {
+  display: block;
+}
+.basket .minor {
   width: 117px;
   padding-left: 45px;
   padding-top: 9px;
   background: rgba(255, 255, 255, 0.2) url("../img/enter.svg") no-repeat 16px center;
 }
-.basket a:hover {
+.basket .minor:hover {
   color: #373737;
   background: #f8f7f4 url("../img/enter-black.svg") no-repeat 16px center;
+}
+
+
+
+
+.gasket:hover {
+  display: block;
 }
 
 .slider {
