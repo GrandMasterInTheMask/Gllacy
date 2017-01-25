@@ -620,29 +620,32 @@ footer .footer-info {
   font-size: 13px;
 }
 .footer-info ul {
-  width: 330px;
   display: table;
 }
 .footer-info .row {
   display: table-row;
 }
 .footer-info li {
-  padding-left: 22px;
   display: table-cell;
   padding-top: 10px;
 }
 .footer-info li:nth-of-type(2n) {
-  padding-left: 32px;
+  padding-left: 12px;
 }
-.footer-info .row a {
+.row a {
   font-weight: normal;
   border-bottom: 1px solid #abbcb3;
+  margin-left: 20px;
 }
-.footer-info .heart {
-  background: url("../img/heart.svg") no-repeat 0 10px;
+.row .heart {
+  position: relative;
 }
-.footer-info .row .heart a {
+.row .heart a {
+  margin-left: 0;
+  padding-left: 20px;
+  display: block;
   font-weight: bold;
+  background: url("../img/heart.svg") no-repeat;
 }
 
 footer .made {
@@ -660,9 +663,14 @@ footer .made {
 /*LINKS*/
 .link:hover {
   color: #ffbc9e;
+  border-bottom: 1px solid #ffbc9e;
+}
+.row .heart a:hover {
+  background: url("../img/heart-pink.svg") no-repeat;
 }
 .enter .link-white:hover,
 .ways .link-white:hover {
   color: #ec593c;
+
 }
 /*LINKS*/
