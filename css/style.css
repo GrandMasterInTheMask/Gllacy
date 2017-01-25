@@ -256,10 +256,6 @@ header {
   text-decoration: underline;
   margin-left: 15px;
 }
-.enter .block a:hover {
-  color: #c3c3c1;
-}
-
 .enter .minor:hover {
   color: #373737;
   background: #f8f7f4 url("../img/enter-black.svg") no-repeat 16px center;
@@ -660,3 +656,13 @@ footer .made {
 .made a {
   border-bottom: 1px solid #b5c4bc;
 }
+
+/*LINKS*/
+.link:hover {
+  color: #ffbc9e;
+}
+.enter .link-white:hover,
+.ways .link-white:hover {
+  color: #ec593c;
+}
+/*LINKS*/
