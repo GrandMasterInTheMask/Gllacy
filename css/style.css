@@ -312,13 +312,20 @@ h1 {
 }
 .flex-container {
   display: flex;
-  justify-content: space-between;
 }
 .column {
   position: relative;
-  flex-basis: 48.9%;
   border-radius: 14px;
   margin-bottom: 40px;
+  flex-basis: 50%;
+}
+.column-1,
+.column-3 {
+  margin-right: 10px;
+}
+.column-2,
+.column-4 {
+  margin-left: 10px;
 }
 .column-1,
 .column-2 {
@@ -411,9 +418,9 @@ h1 {
   margin-left: -6px;
 }
 
-.show {
+[class*="show"] {
   padding: 10px;
-  background-color: #a7b8ad;
+  background-color: #aecebc;
   box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
   position: absolute;
   left: 0;
@@ -423,10 +430,10 @@ h1 {
   z-index: 3;
   display: none;
 }
-.show .hit {
+[class*="show"] .hit {
   top: 10px;
 }
-.show .description {
+[class*="show"] .description {
   border: none;
 }
 .examples .btn {
@@ -440,10 +447,10 @@ h1 {
   padding: 0 27px;
   padding-top: 4.5px;
 }
-.examples li:hover .show {
+.examples li:hover [class*="show"] {
   display: block;
 }
-.show:hover {
+[class*="show"]:hover {
   display: block;
   cursor: pointer;
 }
@@ -822,7 +829,23 @@ input:focus+span {
 .color-3 {
   background-color: #9d8b84;
 }
-
+.color-4 {
+  background-color: #aecebc;
+}
+.color-5 {
+  background-color: #aebed3;
+}
+.color-6 {
+  background-color: #ceb7ae;
+}
+.first-header,
+.second-header,
+.third-header {
+  display: none;
+}
+.visible {
+  display: block;
+}
 
 
 /*SWITCHES*/
