@@ -8,12 +8,6 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
-.btn {
-  display: block;
-  background-color: #ec583c;
-  font-weight: bold;
-  cursor: pointer;
-}
 body {
   background-color: #849d8f;
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -33,15 +27,7 @@ body {
 
 /*TESTER*/
 
-/*.tester {
-  position: absolute;
-  background-color: rgba(255, 255, 0, 0.5);
-  right: 82px;
-  top: 0px;
-  width: 1500px;
-  height: 73px;
-  z-index: 100;
-}*/
+
 
 /*TESTER*/
 
@@ -236,7 +222,7 @@ header {
   width: 100%;
   margin-bottom: 10px;
 }
-.enter button {
+.enter a.btn {
   float: left;
   font-size: 15px;
   line-height: 24.3px;
@@ -244,12 +230,13 @@ header {
   font-weight: bold;
   padding-left: 31px;
   padding-right: 28px;
+  padding-top: 5.5px;
   height: 36px;
   border: none;
   border-radius: 16px;
   margin-top: 5px;
 }
-.enter .block a {
+.enter .link-white {
   font-size: 13px;
   line-height: 24.3px;
   color: #686766;
@@ -308,21 +295,34 @@ h1 {
   padding-top: 317px;
   margin-bottom: 33px;
 }
-.position ul {
+.position form {
   position:absolute;
   top: 490px;
 }
-.position li {
+.position input {
+  display: none;
+
+}
+.position label {
+  display: inline-block;
+  vertical-align: top;
+  width: 21px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.position div {
+  cursor: pointer;
   width: 21px;
   height: 21px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 8px;
 }
-.position .active {
+.position div:hover {
+  background-color: #b2c1b7;
+}
+.position input:checked+div {
   background-color: #ffffff;
+  cursor: auto;
 }
 .slider .btn {
   font-size: 31.48px;
@@ -521,8 +521,10 @@ h1 {
   border: 1px solid #d3d3d2;
   padding: 10px;
 }
-.column-4 button {
+.column-4 a {
   width: 130px;
+  padding-left: 25px;
+  padding-top: 11.5px;
   height: 45px;
   border-radius: 22px;
   border: none;
@@ -605,17 +607,30 @@ footer .icon {
 footer .tw {
   background: url("../img/tw.svg") no-repeat 50% 50%;
 }
+footer .tw:hover {
+  background: url("../img/tw-hover.svg") no-repeat 50% 50%;
+}
 footer .ins {
   background: url("../img/ins.svg") no-repeat 50% 50%;
+}
+footer .ins:hover {
+  background: url("../img/ins-hover.svg") no-repeat 50% 50%;
 }
 footer .fb {
   background: url("../img/fb.svg") no-repeat 50% 50%;
 }
+footer .fb:hover {
+  background: url("../img/fb-hover.svg") no-repeat 50% 50%;
+}
 footer .vk {
   background: url("../img/vk.svg") no-repeat 50% 50%;
 }
+footer .vk:hover {
+  background: url("../img/vk-hover.svg") no-repeat 50% 50%;
+}
 
 footer .footer-info {
+  margin-right: 32px;
   padding-top: 25px;
   font-size: 13px;
 }
@@ -637,16 +652,25 @@ footer .footer-info {
   border-bottom: 1px solid #abbcb3;
   margin-left: 20px;
 }
-.row .heart {
+.heart {
   position: relative;
 }
-.row .heart a {
+.heart a {
   margin-left: 0;
   padding-left: 20px;
   display: block;
   font-weight: bold;
-  background: url("../img/heart.svg") no-repeat;
+  background: url("../img/heart.svg") no-repeat 0 1px;
 }
+.heart div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 20px;
+  background-color: #849d8f;
+}
+
 
 footer .made {
   background: url("../img/footer-logo.svg") no-repeat 0 20px;
@@ -666,11 +690,47 @@ footer .made {
   border-bottom: 1px solid #ffbc9e;
 }
 .row .heart a:hover {
-  background: url("../img/heart-pink.svg") no-repeat;
+  background: url("../img/heart-pink.svg") no-repeat 0 1px;
 }
 .enter .link-white:hover,
 .ways .link-white:hover {
   color: #ec593c;
-
 }
 /*LINKS*/
+
+/*BUTTONS*/
+.btn {
+  display: block;
+  background-image: linear-gradient(to bottom, #f26843, #e74b36);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 1.5px 1px 0 #9e4334;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+.btn:hover {
+  background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+  box-shadow: 0 2px 1px 0.5px #ac1000;
+}
+.btn:active {
+  background-image: linear-gradient(to bottom, #d84732, #e1613e);
+  box-shadow: inset 0 1px 1px 0 #952718;
+}
+.btn-small {
+  box-shadow: 0 1px 3px 0 #9e4334;
+}
+.btn-small:hover {
+  box-shadow: 0 1px 3px 0 #ac1000;
+}
+/*BUTTONS*/
+
+
+
+/*.tester {
+  position: absolute;
+  background-color: rgba(255, 255, 0, 0.5);
+  left: 0px;
+  bottom: 0px;
+  width: 1500px;
+  height: 200px;
+  z-index: 100;
+}*/
