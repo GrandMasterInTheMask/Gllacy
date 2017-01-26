@@ -42,7 +42,6 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*background-color: black;*/
 }
 .main-menu-block {
   position: relative;
@@ -175,9 +174,6 @@ header {
 }
 .search input {
   box-sizing: padding-box;
-  font-size: 15px;
-  line-height: 24.3px;
-  color: #999999;
   padding: 0 11px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -221,9 +217,6 @@ header {
 }
 .enter input {
   box-sizing: padding-box;
-  font-size: 15px;
-  line-height: 24.3px;
-  color: #999999;
   padding: 0 15px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -694,6 +687,9 @@ footer .vk {
 footer .vk:hover {
   background: url("../img/vk-hover.svg") no-repeat 50% 50%;
 }
+footer .icon:active {
+  box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
 
 footer .footer-info {
   margin-right: 32px;
@@ -793,6 +789,10 @@ footer .made {
 form {
   position: relative;
 }
+input {
+  color: #353535;
+  font-weight: bold;
+}
 input:hover {
   border: 2px solid #c7c6c5;
 }
@@ -813,6 +813,10 @@ input:focus+span {
 :focus::-moz-placeholder          {color: transparent}
 :focus:-moz-placeholder           {color: transparent}
 :focus:-ms-input-placeholder      {color: transparent}
+::-webkit-input-placeholder {color:#999999; font-size: 14px; line-height: 24.3px; font-weight: normal;}
+::-moz-placeholder          {color:#999999; font-size: 14px; line-height: 24.3px; font-weight: normal;}/* Firefox 19+ */
+:-moz-placeholder           {color:#999999; font-size: 14px; line-height: 24.3px; font-weight: normal;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#999999; font-size: 14px; line-height: 24.3px; font-weight: normal;}
 /*INPUTS*/
 
 
