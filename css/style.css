@@ -161,7 +161,7 @@ header {
 }
 .search .gasket {
   position: absolute;
-  left: -230px;
+  left: -233px;
   padding-top: 5px;
   z-index: 10;
   display: none;
@@ -174,11 +174,11 @@ header {
 
 }
 .search input {
-  font-size: 14px;
+  box-sizing: padding-box;
+  font-size: 15px;
   line-height: 24.3px;
   color: #999999;
-  padding-left: 11px;
-  padding-right: 11px;
+  padding: 0 11px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   width: 242px;
@@ -190,6 +190,15 @@ header {
 .search:hover .gasket {
   display: block;
 }
+.search input:hover,
+.search input:focus {
+  padding: 0 10px;
+}
+.search span {
+  top: -17px;
+  left: 10px;
+}
+
 .enter .minor {
   width: 92px;
   padding-left: 44px;
@@ -211,16 +220,31 @@ header {
   box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
 }
 .enter input {
-  font-size: 14px;
+  box-sizing: padding-box;
+  font-size: 15px;
   line-height: 24.3px;
   color: #999999;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   height: 35px;
   width: 100%;
+  margin-bottom: 15px;
+}
+.enter input:last-of-type {
   margin-bottom: 10px;
+}
+.enter form span:first-of-type {
+  top: -18px;
+  left: 15px;
+}
+.enter form span:last-of-type {
+  top: 32px;
+  left: 15px;
+}
+.enter input:hover,
+.enter input:focus {
+  padding: 0 14px;
 }
 .enter a.btn {
   float: left;
@@ -260,10 +284,6 @@ header {
   color: #373737;
   background: #f8f7f4 url("../img/enter-black.svg") no-repeat 16px center;
 }
-
-
-
-
 .gasket:hover {
   display: block;
 }
@@ -427,6 +447,7 @@ h1 {
   top: -55px;
   font-weight: bold;
   font-size: 28px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
 }
 .price .rouble {
   font-size: 42px;
@@ -443,6 +464,7 @@ h1 {
   left: 0;
   top: -10px;
   width: 100%;
+  border-radius: 4px;
   z-index: 3;
   display: none;
 }
@@ -557,6 +579,14 @@ h1 {
   border-radius: 4px;
   border: 1px solid #d3d3d2;
   padding: 10px;
+}
+.column-4 input:hover,
+.column-4 input:focus {
+  padding-left: 9px;
+}
+.column-4 .help {
+  left: 9px;
+  top: -20px;
 }
 .column-4 a {
   width: 130px;
@@ -737,11 +767,11 @@ footer .made {
 /*BUTTONS*/
 .btn {
   display: block;
-  background-image: linear-gradient(to bottom, #f26843, #e74b36);
+  background-image: linear-gradient(to bottom, #f26843, #e74a35);
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 1.5px 1px 0 #9e4334;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 3px 0 #9e4334;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
 }
 .btn:hover {
   background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
@@ -759,6 +789,31 @@ footer .made {
 }
 /*BUTTONS*/
 
+/*INPUTS*/
+form {
+  position: relative;
+}
+input:hover {
+  border: 2px solid #c7c6c5;
+}
+input:focus {
+  border: 2px solid #8fbdec;
+}
+.help {
+  position: absolute;
+  color: #8fbdec;
+  font-size: 11px;
+  line-height: 24.3px;
+  display: none;
+}
+input:focus+span {
+  display: inline;
+}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+/*INPUTS*/
 
 
 /*.tester {
