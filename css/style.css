@@ -393,11 +393,11 @@ h1 {
 }
 .examples ul {
   display: flex;
-  justify-content: space-between;
 }
 .examples li {
   position: relative;
-  width: 23.354%;
+  width: 25%;
+  padding: 0 10px;
   margin-bottom: 39px;
 }
 .examples img:not(.hit) {
@@ -434,6 +434,43 @@ h1 {
 .price .to-move {
   margin-left: -6px;
 }
+
+.show {
+  padding: 10px;
+  background-color: #a7b8ad;
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 100%;
+  z-index: 3;
+  display: none;
+}
+.show .hit {
+  top: 10px;
+}
+.show .description {
+  border: none;
+}
+.examples .btn {
+  margin: 20px auto;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 24.3px;
+  width: 192px;
+  height: 36px;
+  border-radius: 16px;
+  padding: 0 27px;
+  padding-top: 4.5px;
+}
+.examples li:hover .show {
+  display: block;
+}
+.show:hover {
+  display: block;
+  cursor: pointer;
+}
+
 .main-info {
   background: #efe5d1 url("../img/wafer.png");
   border-radius: 14px;
@@ -536,7 +573,6 @@ h1 {
 .map-block {
   position: relative;
   min-height: 430px;
-  /*background: url("../img/map-rdy.png") no-repeat center 0;*/
   cursor: pointer;
 }
 aside {
@@ -709,7 +745,7 @@ footer .made {
 }
 .btn:hover {
   background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
-  box-shadow: 0 2px 1px 0.5px #ac1000;
+  box-shadow: 0 2px 3px 0.5px #ac1000;
 }
 .btn:active {
   background-image: linear-gradient(to bottom, #d84732, #e1613e);
