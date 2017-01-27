@@ -16,6 +16,9 @@ var show4 = document.querySelector(".show-4");
 
 
 radio1.addEventListener("click", function(event) {
+  radio2.classList.remove("current");
+  radio3.classList.remove("current");
+  radio1.classList.add("current");
   fh.classList.add("visible");
   sh.classList.remove("visible");
   th.classList.remove("visible");
@@ -46,6 +49,9 @@ radio1.addEventListener("click", function(event) {
 });
 
 radio2.addEventListener("click", function(event) {
+  radio1.classList.remove("current");
+  radio3.classList.remove("current");
+  radio2.classList.add("current");
   sh.classList.add("visible");
   fh.classList.remove("visible");
   th.classList.remove("visible");
@@ -76,6 +82,9 @@ radio2.addEventListener("click", function(event) {
 });
 
 radio3.addEventListener("click", function(event) {
+  radio1.classList.remove("current");
+  radio2.classList.remove("current");
+  radio3.classList.add("current");
   th.classList.add("visible");
   fh.classList.remove("visible");
   sh.classList.remove("visible");
