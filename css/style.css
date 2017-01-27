@@ -32,6 +32,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: black;
 }
 .main-menu-block {
   position: relative;
@@ -41,11 +42,13 @@ header {
   padding-top: 23px;
   padding-bottom: 18px;
   max-width: 420px;
+  background-color: blue;
 }
 .main-logo {
   position: absolute;
   top: 10px;
   left: -7px;
+  background-color: yellow;
 }
 .main {
   display: inline-block;
@@ -268,11 +271,11 @@ header {
   width: 117px;
   padding-left: 45px;
   padding-top: 9px;
-  background: rgba(255, 255, 255, 0.2) url("../img/enter.svg") no-repeat 16px center;
+  background: rgba(255, 255, 255, 0.2) url("../img/basket.svg") no-repeat 16px center;
 }
 .basket .minor:hover {
   color: #373737;
-  background: #f8f7f4 url("../img/enter-black.svg") no-repeat 16px center;
+  background: #f8f7f4 url("../img/basket-black.svg") no-repeat 16px center;
 }
 .gasket:hover {
   display: block;
