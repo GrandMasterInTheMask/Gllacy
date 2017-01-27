@@ -682,22 +682,19 @@ footer .icon:active {
 }
 
 footer .footer-info {
+  display: table;
   margin-right: 32px;
   padding-top: 25px;
   font-size: 13px;
 }
-.footer-info ul {
-  display: table;
-  margin-bottom: 20px;
-}
-.footer-info .row {
+.row {
   display: table-row;
 }
-.footer-info li {
+.row div:not(.crutch) {
   display: table-cell;
   padding-top: 10px;
 }
-.footer-info li:nth-of-type(2n) {
+.row div:not(.crutch):nth-of-type(2n) {
   padding-left: 12px;
 }
 .row a {
@@ -723,8 +720,6 @@ footer .footer-info {
   width: 20px;
   background-color: #849d8f;
 }
-
-
 footer .made {
   background: url("../img/footer-logo.svg") no-repeat 0 20px;
   padding-right: 27px;
