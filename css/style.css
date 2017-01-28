@@ -615,7 +615,7 @@ footer .social-contacts {
   padding-top: 35px;
   padding-bottom: 29px;
   padding-left: 27px;
-  margin-right: 5px;
+  margin-right: 55px;
 }
 footer .icon {
   display: inline-block;
@@ -655,25 +655,34 @@ footer .icon:active {
 }
 
 footer .footer-info {
-  display: table;
+  width: 370px;
+  margin-top: 37px;
   margin-right: 32px;
-  padding-top: 25px;
   font-size: 13px;
 }
-.row {
-  display: table-row;
+.footer-info .left-column {
+  float: left;
+  width: 39%;
 }
-.row div:not(.crutch) {
-  display: table-cell;
-  padding-top: 10px;
+.footer-info .right-column {
+  float: right;
+  width: 61%;
 }
-.row div:not(.crutch):nth-of-type(2n) {
-  padding-left: 12px;
+.footer-info div {
+  padding-bottom: 7px;
 }
-.row a {
+.footer-info a {
   font-weight: 400;
-  border-bottom: 1px solid #abbcb3;
   margin-left: 20px;
+}
+.footer-info a span {
+  border-bottom: 1px solid #abbcb3;
+}
+.footer-info a:hover {
+  color: #ffbc9e;
+}
+.footer-info a:hover span {
+  border-bottom: 1px solid #ffbc9e;
 }
 .heart {
   position: relative;
@@ -683,15 +692,8 @@ footer .footer-info {
   padding-left: 20px;
   display: block;
   font-weight: 700;
-  background: url("../img/heart.svg") no-repeat 0 1px;
-}
-.crutch {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  width: 20px;
-  background-color: #849d8f;
+  background: url("../img/heart.svg") no-repeat 0px 1px;
+  background-size: 15px 13px;
 }
 footer .made {
   background: url("../img/footer-logo.svg") no-repeat 2px 20px;
@@ -710,8 +712,9 @@ footer .made {
   color: #ffbc9e;
   border-bottom: 1px solid #ffbc9e;
 }
-.row .heart a:hover {
-  background: url("../img/heart-pink.svg") no-repeat 0 1px;
+.heart a:hover {
+  background: url("../img/heart-pink.svg") no-repeat 0px 1px;
+  background-size: 15px 13px;
 }
 .enter .link-white:hover,
 .ways .link-white:hover {
@@ -843,9 +846,8 @@ label.current {
 /*.tester {
   position: absolute;
   background-color: rgba(255, 255, 0, 0.5);
-  left: 50%;
-  transform: translateX(-50%);
+  left: 666px;
   width: 1146px;
-  height: 2300px;
-  z-index: 100;
+  height: 2500px;
+  z-index: 1000;
 }*/
