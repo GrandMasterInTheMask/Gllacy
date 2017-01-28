@@ -315,7 +315,6 @@ h1 {
   position: relative;
   border-radius: 15px;
   margin-bottom: 40px;
-  min-width: 420px;
   flex-basis: 48.9%;
 }
 .column-1 {
@@ -411,6 +410,7 @@ h1 {
   margin-left: -6px;
 }
 .main-info {
+  min-height: 305px;
   background: #efe5d1 url("../img/wafer.png");
   border-radius: 14px;
   padding: 20px;
@@ -434,15 +434,15 @@ h1 {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  padding-top: 23px;
+  padding-top: 22px;
 }
 .main-info .first {
   background: url("../img/icon-1.svg") no-repeat;
-  padding-top: 25px;
+  padding-top: 23px;
 }
 .main-info .second {
   background: url("../img/icon-2.svg") no-repeat;
-  padding-top: 25px;
+  padding-top: 23px;
 }
 .main-info .third {
   background: url("../img/icon-3.svg") no-repeat;
@@ -456,7 +456,6 @@ h1 {
 .column-3,
 .column-4 {
   min-height: 220px;
-  width: 50%;
 }
 .column-3 {
   background: #ffffff url("../img/strawberry.png") no-repeat left 0px;
@@ -542,8 +541,11 @@ h1 {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  /*margin-left: 11px;*/
 }
+.column-4 ::-webkit-input-placeholder {color:#999999; font-size: 16px; line-height: 24.3px; font-weight: normal;}
+.column-4 ::-moz-placeholder          {color:#999999; font-size: 16px; line-height: 24.3px; font-weight: normal;}/* Firefox 19+ */
+.column-4 :-moz-placeholder           {color:#999999; font-size: 16px; line-height: 24.3px; font-weight: normal;}/* Firefox 18- */
+.column-4 :-ms-input-placeholder      {color:#999999; font-size: 16px; line-height: 24.3px; font-weight: normal;}
 .map-block {
   position: relative;
   min-height: 430px;
