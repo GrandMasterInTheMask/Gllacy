@@ -1,3 +1,22 @@
+/*FONTS*/
+@font-face {
+  font-family: "Roboto-Black";
+  src: local("../fonts/roboto/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("../fonts/roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: local("../fonts/roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("../fonts/roboto/Roboto-Regular.ttf");
+}
+/*FONTS*/
+
 h1, h2, h3, p, form, * {
   box-sizing: border-box;
   margin: 0;
@@ -8,8 +27,9 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
-.all {
-  font-family: 'Roboto', 'Arial', sans-serif;
+body {
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 16px;
   color: #ffffff;
 }
@@ -32,7 +52,6 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: black;
 }
 .main-menu-block {
   position: relative;
@@ -40,15 +59,13 @@ header {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 23px;
-  padding-bottom: 18px;
+  padding-bottom: 10px;
   max-width: 420px;
-  background-color: blue;
 }
 .main-logo {
   position: absolute;
   top: 10px;
   left: -7px;
-  background-color: yellow;
 }
 .main {
   display: inline-block;
@@ -65,7 +82,6 @@ header {
 }
 .main .text {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  font-weight: bold;
 }
 .main-link:hover {
   color: #333333;
@@ -78,7 +94,6 @@ header {
 .main-link:hover .text {
   border: none;
 }
-
 .hidden-menu {
   position: absolute;
   z-index: 10;
@@ -111,14 +126,14 @@ header {
   z-index: 100;
 }
 .hidden-menu a {
+  font-weight: 400;
   display: block;
   color: #343434;
   font-size: 14px;
-  font-weight: normal;
   padding: 10px 21px;
 }
 .hidden-menu .new {
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 1px;
 }
 .hidden-menu a:hover {
@@ -136,9 +151,10 @@ header {
   background-color: #f6b5a5;
 }
 .header-info {
+  font-weight: 500;
   position: relative;
   padding-top: 23px;
-  padding-bottom: 18px;
+  padding-bottom: 8px;
   max-width: 270px;
 }
 .header-info li {
@@ -154,7 +170,6 @@ header {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   font-size: 14px;
-  font-weight: 500;
 }
 .search .minor {
   width: 33px;
@@ -244,7 +259,6 @@ header {
   font-size: 15px;
   line-height: 24.3px;
   color: #fefefe;
-  font-weight: bold;
   padding-left: 31px;
   padding-right: 28px;
   padding-top: 5.5px;
@@ -289,11 +303,10 @@ header {
 }
 .time-phone span:first-of-type {
   font-size: 14px;
-  font-weiht: bold;
 }
 .time-phone span:last-of-type {
-  font-size: 22px;
   font-weight: 900;
+  font-size: 22px;
 }
 h1 {
   font-weight: 900;
@@ -306,7 +319,6 @@ h1 {
 .slider .btn {
   font-size: 31.48px;
   line-height: 62.93px;
-  font-weight: bold;
   width: 278px;
   height: 63px;
   border-radius: 30px;
@@ -347,14 +359,12 @@ h1 {
 }
 .column h2 {
   font-size: 35px;
-  font-weight: bold;
   margin-left: 20px;
   margin-bottom: 15px;
 }
 .column-1 p,
 .column-2 p {
   font-size: 18px;
-  font-weight: bold;
   padding-left: 20px;
   padding-right: 30px;
   margin-bottom: 10px;
@@ -391,10 +401,10 @@ h1 {
   margin-bottom: 10px;
 }
 .examples p {
+  font-weight: 500;
   position: relative;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
   text-align: center;
 }
 .examples .description {
@@ -409,7 +419,7 @@ h1 {
   position: absolute;
   left: 0;
   top: -55px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 28px;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
 }
@@ -476,7 +486,7 @@ h1 {
   padding-left: 57px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: normal;
+  font-weight: 400;
   padding-top: 23px;
 }
 .main-info .first {
@@ -602,24 +612,24 @@ aside {
   padding-right: 25px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: url("../img/adress.png");
+  background: url("../img/adress.png") no-repeat;
   border-radius: 15px;
-
 }
 aside b {
   display: block;
   font-size: 14px;
   line-height: 20px;
   color: #343434;
-  font-weight: normal;
+  font-weight: 400;
   max-width: 175px;
 }
 aside strong {
+  font-weight: 700;
   display: block;
   font-size: 18px;
   line-height: 24px;
   color: #343434;
-  max-width: 225px;
+  /*max-width: 225px;*/
 }
 aside .street {
   margin-bottom: 18px;
@@ -701,7 +711,7 @@ footer .footer-info {
   padding-left: 12px;
 }
 .row a {
-  font-weight: normal;
+  font-weight: 400;
   border-bottom: 1px solid #abbcb3;
   margin-left: 20px;
 }
@@ -712,7 +722,7 @@ footer .footer-info {
   margin-left: 0;
   padding-left: 20px;
   display: block;
-  font-weight: bold;
+  font-weight: 700;
   background: url("../img/heart.svg") no-repeat 0 1px;
 }
 .crutch {
@@ -727,7 +737,7 @@ footer .made {
   background: url("../img/footer-logo.svg") no-repeat 0 20px;
   padding-right: 27px;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 400;
   color: #fefefe;
   padding-top: 63px;
 }
@@ -753,7 +763,7 @@ footer .made {
 .btn {
   display: block;
   background-image: linear-gradient(to bottom, #f26843, #e74a35);
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
   box-shadow: 0 2px 3px 0 #9e4334;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
@@ -775,7 +785,6 @@ form {
 input {
   box-sizing: border-box;
   color: #353535;
-  font-weight: bold;
 }
 input:hover {
   border: 2px solid #c7c6c5;
@@ -829,22 +838,6 @@ label.current {
   background-color: #ffffff;
   cursor: auto;
 }
-/*.position label::after {
-  content: "";
-  display: block;
-  cursor: pointer;
-  width: 21px;
-  height: 21px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-}
-.position label::after:hover {
-  background-color: #b2c1b7;
-}
-.position input:checked+label::after {
-  background-color: #ffffff;
-  cursor: auto;
-}*/
 .background-1 {
   background: url("../img/background-1.png") center 0;
 }
@@ -880,9 +873,9 @@ label.current {
 .visible {
   display: block;
 }
-
-
 /*SWITCHES*/
+
+
 
 
 
