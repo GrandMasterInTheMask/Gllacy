@@ -844,7 +844,7 @@ label.current {
 /*SWITCHES*/
 
 /*ADAPTIVE PART*/
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 900px) {
 
 .container-local {
   margin: 0 10px;
@@ -867,7 +867,7 @@ label.current {
   padding-right: 0;
 }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
   .background-1,
   .background-2,
   .background-3 {
@@ -938,6 +938,9 @@ label.current {
   }
   .column-4 .inside {
     padding-bottom: 110px;
+  }
+  aside {
+    display: none;
   }
   .footer-info {
     min-width: 0;
