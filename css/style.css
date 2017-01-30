@@ -13,6 +13,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
+  position: relative;
 }
 .container-global {
   min-width: 600px;
@@ -708,6 +709,14 @@ footer .icon:active {
 }
 
 /*CONNECTION FORM*/
+  .overlay {
+    position: absolute;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
   .connection-form {
     position: fixed;
     left: 50%;
@@ -722,6 +731,7 @@ footer .icon:active {
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 95px;
+    display: none;
   }
   .connection-form h2 {
     font-size: 24px;
@@ -731,7 +741,7 @@ footer .icon:active {
     margin-bottom: 20px;
   }
   .connection-form form {
-    min-height: 355px;
+    min-height: 358px;
   }
   .connection-form input {
     display: block;
@@ -760,7 +770,11 @@ footer .icon:active {
     border: 1px solid #d3d3d2;
     border-radius: 5px;
     width: 425px;
-    height: 155px;
+    height: 160px;
+  }
+  .connection-form .help-3 {
+    left: 14px;
+    top: 108px;
   }
   .connection-form textarea:hover {
     padding: 9px 14px;
@@ -776,6 +790,12 @@ footer .icon:active {
     line-height: 24.3px;
     height: 44px;
     border-radius: 21px;
+  }
+  .close {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
   }
   .connection-form ::-webkit-input-placeholder {color:#656565; font-size: 16px; line-height: 24.3px; font-weight: normal;}
   .connection-form ::-moz-placeholder          {color:#656565; font-size: 16px; line-height: 24.3px; font-weight: normal;}/* Firefox 19+ */
@@ -827,6 +847,7 @@ form {
 input {
   box-sizing: border-box;
   color: #353535;
+  font-weight: 700;
 }
 input:hover,
 textarea:hover {
@@ -843,7 +864,8 @@ textarea:focus {
   line-height: 24.3px;
   display: none;
 }
-input:focus+span {
+input:focus+span,
+textarea:focus+span {
   display: inline;
 }
 :focus::-webkit-input-placeholder {color: transparent}

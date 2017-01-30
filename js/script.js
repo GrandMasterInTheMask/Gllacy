@@ -7,6 +7,23 @@ var th = document.querySelector(".third-header");
 var radio1 = document.querySelector(".th-1");
 var radio2 = document.querySelector(".th-2");
 var radio3 = document.querySelector(".th-3");
+var overlay = document.querySelector(".overlay");
+var connectButton = document.querySelector(".connect");
+var connectForm = document.querySelector(".connection-form");
+var close = document.querySelector(".close");
+
+connectButton.addEventListener("click", function(event) {
+  overlay.classList.add("visible");
+  connectForm.classList.add("visible");
+});
+close.addEventListener("click", function(event) {
+  overlay.classList.remove("visible");
+  connectForm.classList.remove("visible");
+});
+overlay.addEventListener("click", function(event) {
+  overlay.classList.remove("visible");
+  connectForm.classList.remove("visible");
+});
 
 radio1.addEventListener("click", function(event) {
   radio2.classList.remove("current");
