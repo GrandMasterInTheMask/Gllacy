@@ -746,6 +746,14 @@ footer .icon:active {
   .connection-form input:hover {
     padding: 0 14px;
   }
+  .connection-form .help-1 {
+    left: 14px;
+    top: -20px;
+  }
+  .connection-form .help-2 {
+    left: 14px;
+    top: 44px;
+  }
   .connection-form textarea {
     box-sizing: padding-box;
     padding: 10px 15px;
