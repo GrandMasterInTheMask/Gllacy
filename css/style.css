@@ -178,7 +178,9 @@ header::after {
 }
 .search input {
   box-sizing: padding-box;
-  padding: 0 11px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 4px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   width: 242px;
@@ -192,7 +194,9 @@ header::after {
 }
 .search input:hover,
 .search input:focus {
-  padding: 0 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
 }
 .search span {
   top: -17px;
@@ -223,7 +227,9 @@ header::after {
 }
 .enter input {
   box-sizing: padding-box;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 4px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   height: 35px;
@@ -243,7 +249,9 @@ header::after {
 }
 .enter input:hover,
 .enter input:focus {
-  padding: 0 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 3px;
 }
 .enter a.btn {
   float: left;
@@ -534,8 +542,7 @@ h1 {
 }
 .column-4 input:hover,
 .column-4 input:focus {
-  padding-left: 9px;
-  padding-right: 9px;
+  padding: 9px;
 }
 .column-4 .help {
   left: 9px;
@@ -624,37 +631,37 @@ footer .icon {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  border: 4px solid rgba(255, 255, 255, 0.5);
+  border: 4px solid #c2cec7;
+  /*border: 4px solid black;*/
   margin-right: 7px;
 }
 footer .tw {
-  background: url("../img/tw.svg") no-repeat 50% 50%;
+  background: url("../img/icon-sprite.svg") no-repeat -1px -1px;
 }
 footer .tw:hover {
-  background: url("../img/tw-hover.svg") no-repeat 50% 50%;
+  background: url("../img/icon-sprite.svg") no-repeat -37px -1px;
 }
 footer .ins {
-  background: url("../img/ins.svg") no-repeat 50% 50%;
+  background: url("../img/icon-sprite.svg") no-repeat -1px -36px;
 }
 footer .ins:hover {
-  background: url("../img/ins-hover.svg") no-repeat 50% 50%;
+    background: url("../img/icon-sprite.svg") no-repeat -37px -36px;
 }
 footer .fb {
-  background: url("../img/fb.svg") no-repeat 50% 50%;
+  background: url("../img/icon-sprite.svg") no-repeat -1px -71px;
 }
 footer .fb:hover {
-  background: url("../img/fb-hover.svg") no-repeat 50% 50%;
+  background: url("../img/icon-sprite.svg") no-repeat -37px -71px;
 }
 footer .vk {
-  background: url("../img/vk.svg") no-repeat 50% 50%;
+  background: url("../img/icon-sprite.svg") no-repeat -1px -107px;
 }
 footer .vk:hover {
-  background: url("../img/vk-hover.svg") no-repeat 50% 50%;
+  background: url("../img/icon-sprite.svg") no-repeat -37px -107px;
 }
 footer .icon:active {
   box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.5);
 }
-
 .footer-info {
   width: 370px;
   padding-top: 37px;
@@ -748,13 +755,17 @@ footer .icon:active {
     height: 44px;
     width: 265px;
     margin-bottom: 20px;
-    box-sizing: padding-box;
-    padding: 0 15px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
     border: 1px solid #d3d3d2;
     border-radius: 5px;
   }
   .connection-form input:hover {
-    padding: 0 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 7px;
   }
   .connection-form .help-1 {
     left: 14px;
